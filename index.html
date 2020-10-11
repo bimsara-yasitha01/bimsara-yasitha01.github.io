@@ -1279,7 +1279,6 @@
                 });
 
                 // create FormData
-                /*
                 var formData = new FormData();
                 formData.append('video-filename', fileName);
                 formData.append('video-blob', blob);
@@ -1300,16 +1299,6 @@
 
                     callback('ended', upload_directory + fileName);
                 });
-                */
-
-                var formData = new FormData();
-                formData.append('video-filename', fileName);
-                formData.append('video-blob', blob);
-                fetch('http://localhost:5000/api/v1/videos/'{
-                    method: 'POST',
-                    body: formData
-                });
-
             }
 
             function makeXMLHttpRequest(url, data, callback) {
